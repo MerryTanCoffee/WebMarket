@@ -9,7 +9,8 @@ public class Product {
 	private String category;      // 상품 분류
 	private long unitsInStock;    // 상품 재고수
 	private String condition;     // 상품 구분(신상/중고/재생)
-	private String filename;
+	private String filename;	  // 상품 이미지 파일명	
+	private int quantity; 		  // 장바구니에 담은 갯수	
 
 	
 	public Product() {		
@@ -78,6 +79,13 @@ public class Product {
 	public void setFilename(String filename) {
 		this.filename = filename;
 	}
-	
-	
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
 }
